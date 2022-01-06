@@ -27,7 +27,7 @@ comments: true
 我非常愉快的使用这个case 进行研究和调试。
 
 首先，我将这段代码以源码的形式放在Demo里，在 Xcode Memory  中可以看到内存的上涨，并且 OOMDetector 工作正常，抓到了申请这块内存的堆栈。
-接下来，我将这个函数放在一个framework 中，编译优化选项设置为 None，将framework以二进制的形式引入抖音。这时，出现了有趣的事情：
+接下来，我将这个函数放在一个framework 中，编译优化选项设置为 None，将framework以二进制的形式引入测试工程。这时，出现了有趣的事情：
 1. 如果framework 的编译优化选项设置为 None，OOMDetector 可以抓到泄漏堆栈
 2. 如果framework 的编译优化选项设置为O1，OOMDetector 什么都抓不到。。。
 

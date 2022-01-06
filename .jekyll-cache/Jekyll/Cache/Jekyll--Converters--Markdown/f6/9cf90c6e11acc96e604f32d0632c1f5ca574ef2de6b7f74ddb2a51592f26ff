@@ -1,0 +1,2 @@
+I"�<p>在上一篇<a href="libmalloc1-strcut">libmalloc 知识学习（一）结构</a>中了解了 Apple 广泛使用的内存库libmalloc，学习了libmalloc的组成结构，这一篇文章将会重点研究libmalloc是如何分配内存的。</p>
+:ET

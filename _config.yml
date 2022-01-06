@@ -1,6 +1,6 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
+title:              Whoops
+bio:                '欢迎，欢迎'
 description:        "Moon is a minimal, one column jekyll theme for your blog."
 reading_time:       true
 words_per_minute:   200
@@ -40,9 +40,9 @@ disqus_shortname:   jethroye
   #ad-slot:
 #bing-verify:
 #email:
-twitter:            username
-facebook:           username
-github-url:         https://github.com/JethroYe
+# twitter:            username
+# facebook:           username
+github-url:         jethroye
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
@@ -52,7 +52,7 @@ instagram:          yeyuxuan.ins
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+# steam:              username
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel

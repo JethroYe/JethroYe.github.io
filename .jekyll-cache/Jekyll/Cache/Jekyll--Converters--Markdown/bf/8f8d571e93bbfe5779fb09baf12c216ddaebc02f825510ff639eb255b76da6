@@ -1,0 +1,18 @@
+I"�<p>前段时间，在研究内存泄漏检测的的过程中，我写了一个测试case 用于测试内存泄漏。并且使用这个case 来研究OOMDetector <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> 的机制和原理</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//测试case
+- (void)helloWorld { 
+     void* pointer = malloc(500*1024*1024);
+     memset(pointer, 255, 500*1024*1024);
+ }
+</code></pre></div></div>
+<p>这个case 非常简单：在一个栈变量pointer 申请了500MB内存，并且将其涂写。
+在iOS 中，申请并且使用过的内存就是dirty 的内存了，dirty内存是没办法被系统回收的。随着函数退出，栈变量pointer被回收，这500MB的内存将没有指针指向它，</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>OOMDetector 是腾讯出品的一款内存泄漏检测工具。 <a href="https://github.com/Tencent/OOMDetector">OOMDetector</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
