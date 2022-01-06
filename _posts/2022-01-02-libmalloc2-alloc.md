@@ -1,6 +1,9 @@
 ---
 title: libmalloc 知识学习（二）申请
 updated: 2022-01-02 18:00
+tag: 
+- 原创
+- libmalloc
 ---
 
 在上一篇[libmalloc 知识学习（一）结构](libmalloc1-strcut)中了解了 Apple 广泛使用的内存库libmalloc，学习了libmalloc的组成结构，这一篇文章将会重点研究libmalloc是如何分配内存的。
